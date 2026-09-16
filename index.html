@@ -8,7 +8,7 @@
 
     <meta
       name="description"
-      content="Unofficial Steam Input controller support for Dust Walkers, featuring a completed demo layout, gameplay examples, full control mapping, and current playtest compatibility testing."
+      content="Unofficial Steam Input controller support for Dust Walkers, with a stable demo release and a separately validated current-playtest release, plus gameplay examples and a full control map."
     />
 
     <meta name="theme-color" content="#111111" />
@@ -20,34 +20,44 @@
     />
 
     <meta property="og:type" content="website" />
+
     <meta property="og:title" content="Dust Walkers Controller Companion" />
+
     <meta
       property="og:description"
-      content="Unofficial Steam Input controller support for Dust Walkers, featuring a completed demo layout, gameplay examples, full control mapping, and current playtest compatibility testing."
+      content="Unofficial Steam Input controller support for Dust Walkers, with a stable demo release and a separately validated current-playtest release, plus gameplay examples and a full control map."
     />
+
     <meta
       property="og:url"
       content="https://godofthunder101.github.io/dust-walkers-controller-companion/"
     />
+
     <meta
       property="og:image"
       content="https://godofthunder101.github.io/dust-walkers-controller-companion/assets/images/DWCC_Hero_Gameplay_01.png"
     />
+
     <meta
       property="og:image:alt"
       content="Dust Walkers gameplay with the controller input display visible"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
+
     <meta name="twitter:title" content="Dust Walkers Controller Companion" />
+
     <meta
       name="twitter:description"
-      content="Unofficial Steam Input controller support for Dust Walkers, featuring a completed demo layout, gameplay examples, full control mapping, and current playtest compatibility testing."
+      content="Unofficial Steam Input controller support for Dust Walkers, with a stable demo release and a separately validated current-playtest release, plus gameplay examples and a full control map."
     />
+
     <meta
       name="twitter:image"
       content="https://godofthunder101.github.io/dust-walkers-controller-companion/assets/images/DWCC_Hero_Gameplay_01.png"
     />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -68,15 +78,25 @@
             scheme. It uses a bounded right-stick cursor for predictable local
             aiming, an LT free-mouse mode when full pointer control is needed,
             direct access to abilities and core actions, and a control layout
-            refined through full-demo completion and multiple play sessions.
+            refined through full-demo completion, then fully validated again
+            through the current Dust Walkers playtest.
           </p>
 
-          <a
-            class="primary-button"
-            href="steam://controllerconfig/3904060/3801908513"
-          >
-            Open Published Demo Layout
-          </a>
+          <div class="hero-actions">
+            <a
+              class="primary-button"
+              href="steam://controllerconfig/3904060/3801908513"
+            >
+              Open Published Demo Layout
+            </a>
+
+            <a
+              class="primary-button"
+              href="steam://controllerconfig/3980470/3802517026"
+            >
+              Open Current Playtest Layout
+            </a>
+          </div>
         </div>
 
         <img
@@ -87,44 +107,60 @@
       </section>
 
       <section class="playtest-status">
-        <div class="status-badge">Playtest support in testing</div>
+        <div class="status-badge">Demo v1 stable · Playtest v1 released</div>
 
         <div class="status-copy">
-          <h2>Current Dust Walkers playtest support is in progress.</h2>
+          <h2>
+            Controller Companion is now validated for both the demo and the
+            current playtest.
+          </h2>
 
           <p>
-            The published Steam Input v1 layout was built and validated against
-            the Dust Walkers demo. I am currently testing and adapting the
-            Controller Companion against the current Dust Walkers playtest.
+            <strong>Demo v1</strong> remains the finished, stable release for
+            the Dust Walkers demo. It has not been replaced or superseded.
           </p>
 
           <p>
-            A public playtest-compatible version is planned once that testing
-            has reached a useful baseline.
+            <strong>Playtest v1</strong> is a separate release for the current
+            Dust Walkers playtest. The published Community Layout has been
+            downloaded, reapplied, and validated through completion of the
+            playtest.
+          </p>
+
+          <p>
+            <strong>Input-mode requirement:</strong>
+            both Controller Companion releases are designed exclusively for Dust
+            Walkers' <strong>WASD</strong> input mode. The alternative mouse /
+            MOBA-style movement mode is not supported.
           </p>
 
           <p class="status-warning">
-            <strong>Expect some instability:</strong>
-            the playtest version of Dust Walkers is expected to change
-            regularly, so bindings, interface behaviour or other assumptions
-            used by the controller layout may change between game updates.
-            Playtest support should therefore be considered provisional rather
-            than as stable as the finished demo layout.
+            <strong>Playtest support is version-sensitive:</strong>
+            the playtest is expected to continue changing. Future Dust Walkers
+            updates may alter bindings, interface behaviour, or other
+            assumptions used by the layout, so Playtest v1 may require
+            adjustment as the game evolves. Demo v1 remains the stable
+            historical release for the demo.
           </p>
         </div>
       </section>
 
       <section class="quick-setup">
         <div class="section-heading">
-          <p class="eyebrow">Demo v1 quick setup</p>
+          <p class="eyebrow">Quick setup</p>
 
-          <h2>Get the published demo layout running.</h2>
+          <h2>Choose the layout that matches your Dust Walkers build.</h2>
         </div>
 
         <div class="setup-steps">
           <div class="setup-step">
             <span class="step-number">01</span>
-            <p>Set Dust Walkers Input Method to <strong>WASD</strong>.</p>
+            <p>
+              <strong>Required:</strong>
+              set Dust Walkers Input Method to <strong>WASD</strong>. The
+              Controller Companion does not support the alternative mouse /
+              MOBA-style movement mode.
+            </p>
           </div>
 
           <div class="setup-step">
@@ -134,10 +170,15 @@
 
           <div class="setup-step">
             <span class="step-number">03</span>
+
             <p>
-              Apply
-              <strong>Dust Walkers Controller Companion — Steam Input v1</strong
-              >.
+              Apply the matching Community Layout:
+              <br />
+              <strong>Demo:</strong>
+              Dust Walkers Controller Companion — Steam Input v1
+              <br />
+              <strong>Current playtest:</strong>
+              Dust Walkers Controller Companion — Playtest v1
             </p>
           </div>
 
@@ -153,7 +194,7 @@
 
       <section class="steam-input">
         <div class="section-heading">
-          <p class="eyebrow">Steam Input v1</p>
+          <p class="eyebrow">Controller Companion design</p>
 
           <h2>Two cursor modes, each used only when it makes sense.</h2>
 
@@ -326,12 +367,12 @@
       <section class="gameplay-gallery">
         <div class="section-heading">
           <p class="eyebrow">More gameplay clips</p>
-
-          <h2>More examples from the completed demo layout.</h2>
+          <h2>More examples of the Controller Companion in play.</h2>
 
           <p>
-            Additional footage showing the Steam Input layout in different parts
-            of normal Dust Walkers play.
+            These clips were captured during demo validation and show the same
+            controller design now used by both Demo v1 and the current Playtest
+            v1 release.
           </p>
         </div>
 
@@ -432,11 +473,11 @@
         <div class="section-heading">
           <p class="eyebrow">Full control map</p>
 
-          <h2>Steam Input v1</h2>
+          <h2>Controller Companion mapping</h2>
 
           <p>
-            The complete controller mapping used for the current Dust Walkers
-            demo.
+            The shared controller mapping used by both Demo v1 and the current
+            Playtest v1 release.
           </p>
         </div>
 
@@ -599,9 +640,9 @@
           <h2>Controller prompts inside the game.</h2>
 
           <p>
-            Steam Input v1 is complete and works independently. A separate
-            Controller Glyph Overlay is planned as an optional visual aid for
-            Dust Walkers' keyboard-oriented prompts.
+            The published Controller Companion layouts work independently. A
+            separate Controller Glyph Overlay is planned as an optional visual
+            aid for Dust Walkers' keyboard-oriented prompts.
           </p>
         </div>
 
@@ -670,11 +711,12 @@
             <h3>Version-specific compatibility</h3>
 
             <p>
-              The published Steam Input v1 layout was built and validated
-              against the Dust Walkers demo. Compatibility with the current
-              playtest is being tested separately, and playtest updates may
-              change bindings, interface behaviour or other assumptions used by
-              the layout.
+              Demo v1 is the stable release validated against the finished Dust
+              Walkers demo. Playtest v1 has been separately validated through
+              completion of the current playtest build, including a full run
+              using the published Community Layout. Because the playtest is
+              still evolving, future game updates may require Playtest v1 to be
+              retested or adjusted.
             </p>
           </article>
 
@@ -795,7 +837,8 @@
               <h3>Keep testing in real play</h3>
               <p>
                 The layout was revised through actual gameplay, including
-                full-demo completion and multiple follow-up sessions.
+                full-demo completion, multiple follow-up sessions, and full
+                validation through the current Dust Walkers playtest.
               </p>
             </div>
           </article>
@@ -827,32 +870,52 @@
         <div class="section-heading">
           <p class="eyebrow">Install and project status</p>
 
-          <h2>Steam Input v1 is complete for the current demo.</h2>
+          <h2>Two published layouts, one shared controller design.</h2>
 
           <p>
-            The published Community Layout is the finished controller-support
-            component for the Dust Walkers demo. Compatibility work for the
-            current Dust Walkers playtest is now in progress, with a public
-            playtest version planned once testing reaches a useful baseline. The
-            optional Controller Glyph Overlay remains a separate future
-            enhancement.
+            <strong>Demo v1</strong> remains the stable, finished release for
+            the Dust Walkers demo. <strong>Playtest v1</strong> is a separate
+            Community Layout fully validated against the current playtest build,
+            including a complete run using the published copy. Because the
+            playtest is still evolving, Playtest v1 may need to be retested or
+            updated after future game changes. The optional Controller Glyph
+            Overlay remains a separate future enhancement.
           </p>
         </div>
 
         <div class="install-panel">
           <div class="install-primary">
-            <p class="mode-label">Steam Community Layout</p>
+            <p class="mode-label">Steam Community Layouts</p>
 
-            <h3>Dust Walkers Controller Companion — Steam Input v1</h3>
+            <div class="release-entry">
+              <h3>Dust Walkers Controller Companion — Steam Input v1</h3>
 
-            <p>Open the published controller layout directly in Steam.</p>
+              <p>Stable release for the finished Dust Walkers demo.</p>
 
-            <a
-              class="primary-button"
-              href="steam://controllerconfig/3904060/3801908513"
-            >
-              Open Published Demo Layout
-            </a>
+              <a
+                class="primary-button"
+                href="steam://controllerconfig/3904060/3801908513"
+              >
+                Open Published Demo Layout
+              </a>
+            </div>
+
+            <div class="release-entry">
+              <h3>Dust Walkers Controller Companion — Playtest v1</h3>
+
+              <p>
+                Current release for the Dust Walkers playtest. Fully validated
+                against the current playtest build, but may require adjustment
+                after future game updates.
+              </p>
+
+              <a
+                class="primary-button"
+                href="steam://controllerconfig/3980470/3802517026"
+              >
+                Open Current Playtest Layout
+              </a>
+            </div>
           </div>
 
           <div class="project-metadata">
@@ -869,22 +932,33 @@
 
               <div>
                 <dt>Demo status</dt>
-                <dd>Published and distribution complete</dd>
+                <dd>Published, stable and distribution complete</dd>
               </div>
 
               <div>
-                <dt>Current playtest</dt>
-                <dd>Compatibility testing in progress</dd>
+                <dt>Playtest public version</dt>
+                <dd>1.0</dd>
               </div>
 
               <div>
-                <dt>Public playtest version</dt>
-                <dd>Planned after compatibility testing</dd>
+                <dt>Playtest layout ID</dt>
+                <dd>3802517026</dd>
+              </div>
+
+              <div>
+                <dt>Playtest status</dt>
+                <dd>
+                  Published and fully validated against the current playtest
+                  build
+                </dd>
               </div>
 
               <div>
                 <dt>Playtest stability</dt>
-                <dd>Provisional — game updates may require layout changes</dd>
+                <dd>
+                  Version-sensitive — future game updates may require retesting
+                  or layout changes
+                </dd>
               </div>
 
               <div>
@@ -912,10 +986,15 @@
 
         <div class="install-fallback">
           <p>
-            <strong>Prefer to find it inside Steam?</strong>
-            Open the game's controller-layout browser, choose
-            <strong>Community Layouts</strong>, and look for
-            <strong>Dust Walkers Controller Companion — Steam Input v1</strong>.
+            <strong>Prefer to find the layouts inside Steam?</strong>
+            Open the controller-layout browser for the Dust Walkers build you
+            are running, choose <strong>Community Layouts</strong>, and look
+            for: <br /><br />
+            <strong>Demo:</strong>
+            Dust Walkers Controller Companion — Steam Input v1
+            <br />
+            <strong>Current playtest:</strong>
+            Dust Walkers Controller Companion — Playtest v1
           </p>
         </div>
       </section>

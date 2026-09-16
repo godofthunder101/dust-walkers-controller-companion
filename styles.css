@@ -68,6 +68,12 @@ h1 {
   transform: translateY(-1px);
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .hero-image {
   display: block;
   width: 100%;
@@ -679,4 +685,20 @@ td {
   .video-gallery {
     grid-template-columns: 1fr;
   }
+}
+
+.release-entry + .release-entry {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid #333;
+}
+
+.release-entry h3 {
+  margin: 0 0 12px;
+}
+
+.release-entry p {
+  margin: 0 0 18px;
+  line-height: 1.6;
+  color: #d5d5d5;
 }
