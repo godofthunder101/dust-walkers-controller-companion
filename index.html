@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dust Walkers Controller Companion</title>
+
+    <meta
+      name="description"
+      content="Unofficial Steam Input controller support for Dust Walkers, featuring a completed demo layout, gameplay examples, full control mapping, and current playtest compatibility testing."
+    />
+
+    <meta name="theme-color" content="#111111" />
+    <meta name="color-scheme" content="dark" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">
+            Unofficial Steam Input controller support for Dust Walkers
+          </p>
+
+          <h1>Dust Walkers Controller Companion</h1>
+
+          <p class="hero-pitch">
+            A controller layout built around how Dust Walkers actually plays,
+            rather than trying to force it into a conventional twin-stick
+            scheme. It uses a bounded right-stick cursor for predictable local
+            aiming, an LT free-mouse mode when full pointer control is needed,
+            direct access to abilities and core actions, and a control layout
+            refined through full-demo completion and multiple play sessions.
+          </p>
+
+          <a
+            class="primary-button"
+            href="steam://controllerconfig/3904060/3801908513"
+          >
+            Open Published Demo Layout
+          </a>
+        </div>
+
+        <img
+          class="hero-image"
+          src="../assets/images/DWCC_Hero_Gameplay_01.png"
+          alt="Dust Walkers gameplay with the controller input display visible"
+        />
+      </section>
+
+      <section class="playtest-status">
+        <div class="status-badge">Playtest support in testing</div>
+
+        <div class="status-copy">
+          <h2>Current Dust Walkers playtest support is in progress.</h2>
+
+          <p>
+            The published Steam Input v1 layout was built and validated against
+            the Dust Walkers demo. I am currently testing and adapting the
+            Controller Companion against the current Dust Walkers playtest.
+          </p>
+
+          <p>
+            A public playtest-compatible version is planned once that testing
+            has reached a useful baseline.
+          </p>
+
+          <p class="status-warning">
+            <strong>Expect some instability:</strong>
+            the playtest version of Dust Walkers is expected to change
+            regularly, so bindings, interface behaviour or other assumptions
+            used by the controller layout may change between game updates.
+            Playtest support should therefore be considered provisional rather
+            than as stable as the finished demo layout.
+          </p>
+        </div>
+      </section>
+
+      <section class="quick-setup">
+        <div class="section-heading">
+          <p class="eyebrow">Demo v1 quick setup</p>
+
+          <h2>Get the published demo layout running.</h2>
+        </div>
+
+        <div class="setup-steps">
+          <div class="setup-step">
+            <span class="step-number">01</span>
+            <p>Set Dust Walkers Input Method to <strong>WASD</strong>.</p>
+          </div>
+
+          <div class="setup-step">
+            <span class="step-number">02</span>
+            <p>Enable <strong>Steam Input</strong> for the game.</p>
+          </div>
+
+          <div class="setup-step">
+            <span class="step-number">03</span>
+            <p>
+              Apply
+              <strong>Dust Walkers Controller Companion — Steam Input v1</strong
+              >.
+            </p>
+          </div>
+
+          <div class="setup-step">
+            <span class="step-number">04</span>
+            <p>
+              Set Windows display scaling to <strong>100%</strong>. Mouse Region
+              behaved incorrectly at 175% scaling during testing.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="steam-input">
+        <div class="section-heading">
+          <p class="eyebrow">Steam Input v1</p>
+
+          <h2>Two cursor modes, each used only when it makes sense.</h2>
+
+          <p>
+            The layout does not try to make Dust Walkers behave like a
+            conventional twin-stick game. Instead, the right stick changes
+            behaviour depending on what the game actually needs.
+          </p>
+        </div>
+
+        <div class="cursor-modes">
+          <article class="cursor-mode">
+            <p class="mode-label">Normal</p>
+
+            <h3>Bounded right-stick cursor</h3>
+
+            <p>
+              Right stick normally controls a bounded cursor around the active
+              Dust Walker. This keeps aiming predictable and makes abilities
+              much easier to target during hectic combat.
+            </p>
+          </article>
+
+          <article class="cursor-mode">
+            <p class="mode-label">Hold LT</p>
+
+            <h3>Free mouse cursor</h3>
+
+            <p>
+              Hold LT when unrestricted mouse movement is needed. While LT is
+              held, the right stick becomes a free mouse for menus, distant
+              targeting, selling, and other pointer-heavy interactions.
+            </p>
+          </article>
+        </div>
+
+        <div class="key-idea">
+          <p class="mode-label">Key idea</p>
+
+          <p>
+            Free mouse control is optional rather than constant. Most combat can
+            be handled with the bounded cursor, while LT temporarily gives full
+            pointer freedom only when the game actually needs it.
+          </p>
+        </div>
+      </section>
+
+      <section class="gameplay-proof">
+        <div class="section-heading">
+          <p class="eyebrow">Core gameplay</p>
+
+          <h2>
+            Designed around the game, not around a generic controller template.
+          </h2>
+
+          <p>
+            Movement, bounded right-stick aiming, dodge, interaction and
+            abilities remain directly accessible during normal combat.
+          </p>
+        </div>
+
+        <video class="gameplay-video" controls playsinline preload="metadata">
+          <source
+            src="assets/video/DWCC_02_Core_Combat_720p_WEB.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support HTML video.
+        </video>
+      </section>
+
+      <section class="design-proof">
+        <div class="section-heading">
+          <p class="eyebrow">Design proof</p>
+
+          <h2>One interface, two useful cursor behaviours.</h2>
+
+          <p>
+            The upgrade screen demonstrates why both cursor modes exist. Full
+            mouse freedom is available when needed, but the bounded cursor can
+            also turn the same interface into a simple, predictable three-way
+            selection.
+          </p>
+        </div>
+
+        <div class="proof-notes">
+          <article class="proof-note">
+            <p class="mode-label">First interaction</p>
+
+            <h3>LT free mouse</h3>
+
+            <p>
+              Holding LT unlocks unrestricted pointer movement for precise menu
+              interaction.
+            </p>
+          </article>
+
+          <article class="proof-note">
+            <p class="mode-label">Second interaction</p>
+
+            <h3>Bounded selection</h3>
+
+            <p>
+              Without LT, the bounded cursor naturally behaves like a left /
+              centre / right selector: hold the stick left or right, or leave it
+              centred for the middle option.
+            </p>
+          </article>
+        </div>
+
+        <video class="gameplay-video" controls playsinline preload="metadata">
+          <source
+            src="assets/video/DWCC_07_Level_Upgrade_Flow_720p_WEB.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support HTML video.
+        </video>
+      </section>
+
+      <section class="pointer-proof">
+        <div class="section-heading">
+          <p class="eyebrow">Advanced pointer control</p>
+
+          <h2>Full mouse access without giving up the controller layout.</h2>
+
+          <p>
+            Some Dust Walkers interactions are genuinely mouse-heavy. Holding LT
+            turns the right stick into a free mouse while the rest of the
+            controller continues to handle clicking and menu actions.
+          </p>
+        </div>
+
+        <div class="pointer-features">
+          <article class="pointer-feature">
+            <h3>LT + Right Stick</h3>
+
+            <p>
+              Free mouse movement for inventory, menus and distant pointer
+              interaction.
+            </p>
+          </article>
+
+          <article class="pointer-feature">
+            <h3>RT</h3>
+
+            <p>Left click and confirm while using the free pointer.</p>
+          </article>
+
+          <article class="pointer-feature">
+            <h3>LT + R3</h3>
+
+            <p>
+              Right click for selling, targeting and other secondary mouse
+              actions.
+            </p>
+          </article>
+        </div>
+
+        <video class="gameplay-video" controls playsinline preload="metadata">
+          <source
+            src="assets/video/DWCC_03_Free_Mouse_Inventory_720p_WEB.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support HTML video.
+        </video>
+      </section>
+
+      <section class="gameplay-gallery">
+        <div class="section-heading">
+          <p class="eyebrow">More gameplay clips</p>
+
+          <h2>More examples from the completed demo layout.</h2>
+
+          <p>
+            Additional footage showing the Steam Input layout in different parts
+            of normal Dust Walkers play.
+          </p>
+        </div>
+
+        <div class="video-gallery">
+          <article class="video-gallery-item">
+            <div class="video-gallery-heading">
+              <span>Clip 01</span>
+              <h3>Squad Control</h3>
+            </div>
+
+            <video controls playsinline preload="metadata">
+              <source
+                src="assets/video/DWCC_01_Squad_Control_720p_WEB.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </article>
+
+          <article class="video-gallery-item">
+            <div class="video-gallery-heading">
+              <span>Clip 04</span>
+              <h3>Walker Cycling</h3>
+            </div>
+
+            <video controls playsinline preload="metadata">
+              <source
+                src="assets/video/DWCC_04_Walker_Cycling_720p_WEB.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </article>
+
+          <article class="video-gallery-item">
+            <div class="video-gallery-heading">
+              <span>Clip 05</span>
+              <h3>Hectic Combat</h3>
+            </div>
+
+            <video controls playsinline preload="metadata">
+              <source
+                src="assets/video/DWCC_05_Hectic_Combat_Teaser_720p_WEB.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </article>
+
+          <article class="video-gallery-item">
+            <div class="video-gallery-heading">
+              <span>Clip 06</span>
+              <h3>Teleport to Base</h3>
+            </div>
+
+            <video controls playsinline preload="metadata">
+              <source
+                src="assets/video/DWCC_06_Teleport_To_Base_720p_WEB.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </article>
+
+          <article class="video-gallery-item">
+            <div class="video-gallery-heading">
+              <span>Clip 08</span>
+              <h3>Melee / Close Combat</h3>
+            </div>
+
+            <video controls playsinline preload="metadata">
+              <source
+                src="assets/video/DWCC_08_Melee_Close_Combat_720p_WEB.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </article>
+
+          <article class="video-gallery-item">
+            <div class="video-gallery-heading">
+              <span>Clip 09</span>
+              <h3>Construction / Building</h3>
+            </div>
+
+            <video controls playsinline preload="metadata">
+              <source
+                src="assets/video/DWCC_09_Construction_Building_720p_WEB.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section class="control-map">
+        <div class="section-heading">
+          <p class="eyebrow">Full control map</p>
+
+          <h2>Steam Input v1</h2>
+
+          <p>
+            The complete controller mapping used for the current Dust Walkers
+            demo.
+          </p>
+        </div>
+
+        <p class="table-hint">
+          On smaller screens, swipe sideways to view all control-map columns.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Controller input</th>
+                <th>Normal function</th>
+                <th>Hold LT function</th>
+                <th>Dust Walkers input</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Left Stick</td>
+                <td>Move</td>
+                <td>Move</td>
+                <td>W / A / S / D</td>
+              </tr>
+
+              <tr>
+                <td>L3</td>
+                <td>Melee Attack</td>
+                <td>Melee Attack</td>
+                <td>C</td>
+              </tr>
+
+              <tr>
+                <td>Right Stick</td>
+                <td>Bounded local cursor</td>
+                <td>Free mouse cursor</td>
+                <td>Mouse Region / Joystick Mouse</td>
+              </tr>
+
+              <tr>
+                <td>R3</td>
+                <td>Teleport to Base</td>
+                <td>Right Click / Sell / Target</td>
+                <td>B / Right Mouse Click</td>
+              </tr>
+
+              <tr>
+                <td>A</td>
+                <td>Interact / Pick Up</td>
+                <td>Same</td>
+                <td>F</td>
+              </tr>
+
+              <tr>
+                <td>B</td>
+                <td>Construct Barrier</td>
+                <td>Same</td>
+                <td>Z</td>
+              </tr>
+
+              <tr>
+                <td>X</td>
+                <td>Construct Short-Range Turret</td>
+                <td>Same</td>
+                <td>V</td>
+              </tr>
+
+              <tr>
+                <td>Y</td>
+                <td>Construct Long-Range Turret</td>
+                <td>Same</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>LB</td>
+                <td>Upgrade / Level</td>
+                <td>Same</td>
+                <td>T</td>
+              </tr>
+
+              <tr>
+                <td>RB</td>
+                <td>Dodge</td>
+                <td>Same</td>
+                <td>Space</td>
+              </tr>
+
+              <tr>
+                <td>RT</td>
+                <td>Left Click / Confirm</td>
+                <td>Left Click / Confirm</td>
+                <td>Left Mouse Click</td>
+              </tr>
+
+              <tr>
+                <td>LT</td>
+                <td>Hold for alternate control layer</td>
+                <td>Held</td>
+                <td>Steam Input Mode Shift</td>
+              </tr>
+
+              <tr>
+                <td>D-pad Left</td>
+                <td>Projectile Ability</td>
+                <td>Select Walker 1</td>
+                <td>Q / 1</td>
+              </tr>
+
+              <tr>
+                <td>D-pad Up</td>
+                <td>Defense Ability</td>
+                <td>Select Walker 2</td>
+                <td>E / 2</td>
+              </tr>
+
+              <tr>
+                <td>D-pad Right</td>
+                <td>Utility Ability</td>
+                <td>Select Walker 3</td>
+                <td>G / 3</td>
+              </tr>
+
+              <tr>
+                <td>D-pad Down</td>
+                <td>Ultimate Ability</td>
+                <td>Select All / Swap Unit</td>
+                <td>R / 4</td>
+              </tr>
+
+              <tr>
+                <td>View</td>
+                <td>Inventory</td>
+                <td>Same</td>
+                <td>Tab</td>
+              </tr>
+
+              <tr>
+                <td>Menu</td>
+                <td>Menu / Pause</td>
+                <td>Same</td>
+                <td>Escape</td>
+              </tr>
+
+              <tr>
+                <td>Share</td>
+                <td>Screenshot</td>
+                <td>Same</td>
+                <td>Steam Screenshot</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="glyph-overlay">
+        <div class="section-heading">
+          <p class="eyebrow">Planned optional enhancement</p>
+
+          <h2>Controller prompts inside the game.</h2>
+
+          <p>
+            Steam Input v1 is complete and works independently. A separate
+            Controller Glyph Overlay is planned as an optional visual aid for
+            Dust Walkers' keyboard-oriented prompts.
+          </p>
+        </div>
+
+        <div class="overlay-note">
+          <div>
+            <p class="mode-label">Important distinction</p>
+
+            <h3>The input display in the videos is not the Glyph Overlay.</h3>
+
+            <p>
+              The controller display visible in the gameplay recordings is a
+              presentation aid showing physical controller inputs.
+            </p>
+
+            <p>
+              The planned Glyph Overlay would instead supplement or replace
+              keyboard-oriented prompts inside Dust Walkers with
+              controller-friendly visual guidance.
+            </p>
+          </div>
+
+          <div>
+            <p class="mode-label">Project status</p>
+
+            <h3>Optional and separate.</h3>
+
+            <p>
+              The overlay is not required to use the Steam Input layout and will
+              have its own implementation and versioning.
+            </p>
+
+            <p>
+              The current plan is to begin with a small, non-invasive,
+              transparent always-on-top test overlay before attempting any
+              prompt replacement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="limitations">
+        <div class="section-heading">
+          <p class="eyebrow">Known limitations</p>
+
+          <h2>What the layout does not try to hide.</h2>
+
+          <p>
+            Steam Input removes a lot of control friction, but some limitations
+            come from the specific Dust Walkers build being supported or from
+            the game itself.
+          </p>
+        </div>
+
+        <div class="limitation-list">
+          <article class="limitation-item">
+            <h3>Windows display scaling</h3>
+            <p>
+              Steam Input's Mouse Region behaved incorrectly at 175% Windows
+              scaling during testing. The bounded-cursor setup worked correctly
+              at 100%. If the cursor is offset or trapped in part of the screen,
+              check Windows scaling first.
+            </p>
+          </article>
+
+          <article class="limitation-item">
+            <h3>Version-specific compatibility</h3>
+
+            <p>
+              The published Steam Input v1 layout was built and validated
+              against the Dust Walkers demo. Compatibility with the current
+              playtest is being tested separately, and playtest updates may
+              change bindings, interface behaviour or other assumptions used by
+              the layout.
+            </p>
+          </article>
+
+          <article class="limitation-item">
+            <h3>Cursor and combat readability</h3>
+            <p>
+              The layout reduces the need to hunt for the cursor, but it cannot
+              fix the game's underlying cursor visibility or combat-effect
+              readability.
+            </p>
+          </article>
+
+          <article class="limitation-item">
+            <h3>Multi-Walker difficulty</h3>
+            <p>
+              The layout exposes Walker selection cleanly, but managing multiple
+              Walkers during fast or late enemy telegraphs remains a game-side
+              challenge.
+            </p>
+          </article>
+
+          <article class="limitation-item">
+            <h3>Pause and UI click-through quirks</h3>
+            <p>
+              Some clicks appear to pass through screens that should feel modal.
+              The layout does not attempt to compensate for that.
+            </p>
+          </article>
+
+          <article class="limitation-item">
+            <h3>No manual reload mapping</h3>
+            <p>
+              The current demo does not expose a manual reload key in its
+              bindings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="development-story">
+        <div class="section-heading">
+          <p class="eyebrow">Development story</p>
+
+          <h2>
+            Built by removing friction, not by designing a perfect layout up
+            front.
+          </h2>
+
+          <p>
+            Dust Walkers looked controller-friendly at first glance, but its
+            actual control model mixes WASD movement, cursor-driven abilities,
+            squad selection, building, interaction, and mouse-heavy UI.
+          </p>
+        </div>
+
+        <div class="story-intro">
+          <p>
+            Rather than remap everything at once, the project used a
+            friction-first process: play until something felt awkward, solve
+            that specific problem cleanly enough, then move on.
+          </p>
+        </div>
+
+        <div class="story-steps">
+          <article class="story-step">
+            <span class="story-number">01</span>
+
+            <div>
+              <h3>Keep the cursor close</h3>
+              <p>
+                A bounded right-stick cursor replaced unrestricted mouse aiming
+                for normal combat, making the cursor easier to keep track of.
+              </p>
+            </div>
+          </article>
+
+          <article class="story-step">
+            <span class="story-number">02</span>
+
+            <div>
+              <h3>Unlock the mouse only when needed</h3>
+              <p>
+                LT temporarily unlocks full mouse movement for the situations
+                where Dust Walkers genuinely needs unrestricted pointer control.
+              </p>
+            </div>
+          </article>
+
+          <article class="story-step">
+            <span class="story-number">03</span>
+
+            <div>
+              <h3>Separate combat from squad control</h3>
+              <p>
+                Abilities moved to the normal D-pad, while LT + D-pad handles
+                individual Walker and squad selection.
+              </p>
+            </div>
+          </article>
+
+          <article class="story-step">
+            <span class="story-number">04</span>
+
+            <div>
+              <h3>Move dodge away from the stick</h3>
+              <p>
+                Dodge moved to RB after playtesting showed that predictable
+                cursor recovery mattered more than having dodge tied to the
+                right stick.
+              </p>
+            </div>
+          </article>
+
+          <article class="story-step">
+            <span class="story-number">05</span>
+
+            <div>
+              <h3>Keep testing in real play</h3>
+              <p>
+                The layout was revised through actual gameplay, including
+                full-demo completion and multiple follow-up sessions.
+              </p>
+            </div>
+          </article>
+
+          <article class="story-step">
+            <span class="story-number">06</span>
+
+            <div>
+              <h3>Document the environment too</h3>
+              <p>
+                Testing exposed a Windows display-scaling problem affecting
+                Steam Input's Mouse Region, so 100% scaling became a documented
+                compatibility requirement.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="story-conclusion">
+          <p>
+            The goal was never to make Dust Walkers behave like a different
+            game. It was to reduce the control friction enough that the game
+            itself became the thing being played, rather than the input scheme.
+          </p>
+        </div>
+      </section>
+
+      <section class="install-status">
+        <div class="section-heading">
+          <p class="eyebrow">Install and project status</p>
+
+          <h2>Steam Input v1 is complete for the current demo.</h2>
+
+          <p>
+            The published Community Layout is the finished controller-support
+            component for the Dust Walkers demo. Compatibility work for the
+            current Dust Walkers playtest is now in progress, with a public
+            playtest version planned once testing reaches a useful baseline. The
+            optional Controller Glyph Overlay remains a separate future
+            enhancement.
+          </p>
+        </div>
+
+        <div class="install-panel">
+          <div class="install-primary">
+            <p class="mode-label">Steam Community Layout</p>
+
+            <h3>Dust Walkers Controller Companion — Steam Input v1</h3>
+
+            <p>Open the published controller layout directly in Steam.</p>
+
+            <a
+              class="primary-button"
+              href="steam://controllerconfig/3904060/3801908513"
+            >
+              Open Published Demo Layout
+            </a>
+          </div>
+
+          <div class="project-metadata">
+            <dl>
+              <div>
+                <dt>Demo public version</dt>
+                <dd>1.0</dd>
+              </div>
+
+              <div>
+                <dt>Demo layout ID</dt>
+                <dd>3801908513</dd>
+              </div>
+
+              <div>
+                <dt>Demo status</dt>
+                <dd>Published and distribution complete</dd>
+              </div>
+
+              <div>
+                <dt>Current playtest</dt>
+                <dd>Compatibility testing in progress</dd>
+              </div>
+
+              <div>
+                <dt>Public playtest version</dt>
+                <dd>Planned after compatibility testing</dd>
+              </div>
+
+              <div>
+                <dt>Playtest stability</dt>
+                <dd>Provisional — game updates may require layout changes</dd>
+              </div>
+
+              <div>
+                <dt>Game input mode</dt>
+                <dd>WASD</dd>
+              </div>
+
+              <div>
+                <dt>Validated Windows scaling</dt>
+                <dd>100%</dd>
+              </div>
+
+              <div>
+                <dt>Controller</dt>
+                <dd>Xbox-style controller</dd>
+              </div>
+
+              <div>
+                <dt>Controller Glyph Overlay</dt>
+                <dd>Planned optional future enhancement</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="install-fallback">
+          <p>
+            <strong>Prefer to find it inside Steam?</strong>
+            Open the game's controller-layout browser, choose
+            <strong>Community Layouts</strong>, and look for
+            <strong>Dust Walkers Controller Companion — Steam Input v1</strong>.
+          </p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          Dust Walkers Controller Companion is an unofficial community project
+          and is not affiliated with or endorsed by the Dust Walkers developers.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
