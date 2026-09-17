@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://godofthunder101.github.io/dust-walkers-controller-companion/sitemap.xml
